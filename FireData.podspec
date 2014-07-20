@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.dependency 'Firebase', '~> 1.1'
   s.dependency 'ISO8601DateFormatter', '~> 0.7'
+  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Firebase"' }
 end
